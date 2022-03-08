@@ -10,5 +10,7 @@ public interface ICarroService {
 	
 	public Carro getCarroById(int id);
 	
+	public void saveCarro(Carro carro);
+	
 	
 }

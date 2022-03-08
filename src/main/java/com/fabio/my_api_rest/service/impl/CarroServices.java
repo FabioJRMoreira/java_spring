@@ -39,4 +39,10 @@ public class CarroServices implements ICarroService {
 		return optCarro.get();
 	}
 
+	@Override
+	public void saveCarro(Carro carro) {
+		// TODO Auto-generated method stub
+		this.carroRepository.save(carro);
+	}
+
 }
