@@ -19,14 +19,14 @@ public class CarroServices implements ICarroService {
 	@Autowired
 	private ICarroRepository carroRepository;
 
-	public List<String> getCarro() {
-		List<String> carros = new ArrayList<String>();
-
-		carros.add("Opala");
-		carros.add("Jouney");
-		carros.add("Mustang");
-		carros.add("Civic");
-		carros.add("Impala");
+	public List<Carro> getCarro() {
+		//List<String> carros = new ArrayList<String>();
+		List<Carro> carros = carroRepository.findAll();
+		//carros.add("Opala");
+		//carros.add("Jouney");
+		//carros.add("Mustang");
+		//carros.add("Civic");
+		//carros.add("Impala");
 
 		return carros;
 	}

@@ -34,7 +34,7 @@ public class CarroController {
 	private ICarroService carroService;
 	
 	@GetMapping
-	public List<String> getCarro() {
+	public List<Carro> getCarro() {
 		return this.carroService.getCarro();
 	}
 
@@ -53,14 +53,6 @@ public class CarroController {
 		System.out.println("Cor "+c.getCor());
 		System.out.println("Ano "+c.getData_fab());
 		System.out.println("##################");
-		
-//		System.out.println("nome do carro "+nm_carro);
-//		Carro carro = new Carro();
-//		carro.setNome(nm_carro);
-//		carro.setCor(cor);
-//		SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd"); 
-//		Date data = formato.parse(data_fabricacao);
-//		carro.setData_fab(data);
 		this.carroService.saveCarro(carro);
 		
 	}

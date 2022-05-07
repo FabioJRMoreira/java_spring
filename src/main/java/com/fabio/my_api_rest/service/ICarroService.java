@@ -6,7 +6,7 @@ import com.fabio.my_api_rest.model.Carro;
 
 public interface ICarroService {
 	 
-	public List<String> getCarro();
+	public List<Carro> getCarro();
 	
 	public Carro getCarroById(int id);
 	
